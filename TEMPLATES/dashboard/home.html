@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block header %}
+  <h1>Dashboard</h1>
+{% endblock %}
+
+{% block content %}
+  <div class="dashboard-container">
+    <div class="card">
+      <div class="card-icon">
+        <i class="qr-icon">📱</i>
+      </div>
+      <h2>QR Management</h2>
+      <p>Create, view, and manage your QR codes</p>
+      <a href="{{ url_for('qr.index') }}" class="card-button">Manage QR Codes</a>
+    </div>
+  </div>
+{% endblock %}
